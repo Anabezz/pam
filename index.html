@@ -1,128 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login Fofo</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moranguinho Fofa</title>
 
+  <!-- Fonte estilizada -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS aqui */
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
     }
 
-    body, html {
-      height: 100%;
-      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px;
-    }
-
-    .login-container {
-      background: #fff0f7;
-      padding: 30px 25px;
-      border-radius: 20px;
-      width: 100%;
-      max-width: 360px;
-      box-shadow: 0 10px 20px rgba(171, 110, 188, 0.3);
+    body {
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(#ffe6f0, #fff);
+      color: #ff3385;
       text-align: center;
     }
 
-    h2 {
-      color: #7e3f98;
-      margin-bottom: 25px;
-      font-weight: 600;
-      font-size: 2.2rem;
-      letter-spacing: 1px;
+    header {
+      background-color: #ffb6c1;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: #a75ca1;
-      text-align: left;
-      font-size: 1rem;
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px #d6336c;
     }
 
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 14px 15px;
+    .hero {
+      padding: 40px 20px;
+    }
+
+    .hero img {
+      width: 250px;
+      max-width: 80%;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(255,105,180,0.2);
       margin-bottom: 20px;
-      border: 2px solid #d7a8e3;
-      border-radius: 15px;
-      font-size: 1rem;
-      outline: none;
-      transition: border-color 0.3s ease;
-      background: #fce9f8;
-      color: #6e2e7d;
-      box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.7);
     }
 
-    input[type="text"]:focus,
-    input[type="password"]:focus {
-      border-color: #7e3f98;
-      box-shadow: 0 0 8px #b472ca;
-      background: #fdf3fc;
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    button {
-      width: 100%;
-      padding: 15px;
-      background: linear-gradient(135deg, #b667ce, #f48fb1);
-      border: none;
-      border-radius: 25px;
+    .btn {
+      display: inline-block;
+      background-color: #ff69b4;
       color: white;
-      font-size: 1.3rem;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 6px 12px rgba(193, 95, 146, 0.5);
-      transition: background 0.3s ease, transform 0.2s ease;
-      user-select: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s;
     }
 
-    button:hover {
-      background: linear-gradient(135deg, #f48fb1, #b667ce);
-      transform: scale(1.05);
-      box-shadow: 0 8px 15px rgba(193, 95, 146, 0.7);
+    .btn:hover {
+      background-color: #ff85c1;
     }
 
-    @media (max-width: 400px) {
-      .login-container {
-        padding: 25px 20px;
-      }
-      h2 {
-        font-size: 1.8rem;
-      }
-      input[type="text"],
-      input[type="password"],
-      button {
-        font-size: 1rem;
-        padding: 12px;
-      }
+    footer {
+      background-color: #ffe6f0;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #d6336c;
     }
   </style>
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login Fofo</h2>
-    <form>
-      <label for="usuario">Usuário</label>
-      <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required />
+  <header>
+    <h1>🍓 Moranguinho Fofa 🍓</h1>
+  </header>
 
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
+  <main>
+    <section class="hero">
+      <img src="https://upload.wikimedia.org/wikipedia/pt/6/65/Moranguinho.png" alt="Moranguinho">
+      <p>Bem-vinda ao mundo doce e encantado da Moranguinho! Aqui tudo é cor-de-rosa, cheio de amizade e cheirinho de morango! 🌸</p>
+      <a href="#" class="btn">Explorar</a>
+    </section>
+  </main>
 
-      <button type="submit">Entrar</button>
-    </form>
-  </div>
+  <footer>
+    <p>Feito com 💖 por fãs da Moranguinho</p>
+  </footer>
 </body>
-</html>
-
 </html>
